@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import RootLayout from "./layouts/RootLayout";
-import IntroPage, { introLoader } from "./pages/Intro";
+import IntroPage from "./pages/Intro";
 
 function App() {
   const router = createBrowserRouter([
@@ -11,7 +11,6 @@ function App() {
       children: [
         {
           index: true,
-          loader: introLoader,
           element: <IntroPage />,
         },
       ],
