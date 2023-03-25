@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 import logo from "../../logo.png";
 import { myName } from "../../utils/constants";
 import { urls } from "../../utils/urls.js";
 
-const MainNavigation = (props) => {
+const MainNavigation = ({ location }) => {
   return (
     <header className={`navbar navbar-expand-md navbar-light d-print-none`}>
       <div className="container-fluid">
@@ -18,35 +19,31 @@ const MainNavigation = (props) => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <h1 className="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
-          <a href={urls.root}>
+          <Link to={urls.root}>
             <img src={logo} height="36" alt="" className="mb-1 mr-1" />
             <span className="ms-2">{myName}</span>
-          </a>
+          </Link>
         </h1>
         <div className="collapse navbar-collapse" id="navbar-menu">
           <div className="d-flex flex-column flex-md-row flex-fill align-items-stretch align-items-md-center">
             <ul className="navbar-nav">
               <li
                 className={
-                  "nav-item " +
-                  (window.location.pathname === urls.root ? "active" : "")
+                  "nav-item " + (location === urls.root ? "active" : "")
                 }
               >
-                <a className="nav-link" href={urls.root}>
+                <Link className="nav-link" to={urls.root}>
                   <span className="nav-link-title">Home</span>
-                </a>
+                </Link>
               </li>
               <li
                 className={
-                  "nav-item " +
-                  (window.location.pathname === urls.poems.index
-                    ? "active"
-                    : "")
+                  "nav-item " + (location === urls.poems.index ? "active" : "")
                 }
               >
-                <a className="nav-link" href={urls.poems.index}>
+                <Link className="nav-link" to={urls.poems.index}>
                   <span className="nav-link-title">Poems</span>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
