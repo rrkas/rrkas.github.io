@@ -31,3 +31,68 @@ a.btn:active {
   text-decoration: none;
   color: white;
 }
+
+.hard-wrap {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.content-section {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.title-underline {
+  padding-bottom: 5px;
+  margin-bottom: 3px;
+  border-bottom: 2px solid #e3e3e3;
+}
+
+.home-box {
+  margin: 4px solid #cdcdcd;
+  padding: 10px;
+}
+
+.item-box {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.poem-date {
+  color: #888888;
+}
+
+a.poem-title {
+  color: indigo;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.item-url {
+  color: #d2691e;
+  font-weight: 600;
+}
+
+a.item-url:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+.skill-img {
+  height: 50px;
+  width: 50px;
+}
+
+.logo {
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  margin-right: 10px;
+}

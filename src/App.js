@@ -1,7 +1,10 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import RootLayout from "./layouts/RootLayout";
-import IntroPage from "./pages/Intro";
+import IntroPage from "./pages/IntroPage";
+import PoemDetailPage from "./pages/PoemDetailPage";
+import PoemsPage from "./pages/PoemsPage";
+import { urls } from "./utils/urls";
 
 function App() {
   const router = createBrowserRouter([
@@ -12,6 +15,14 @@ function App() {
         {
           index: true,
           element: <IntroPage />,
+        },
+        {
+          path: urls.poems.index,
+          element: <PoemsPage />,
+        },
+        {
+          path: urls.poems.poemDetail(":id"),
+          element: <PoemDetailPage />,
         },
       ],
     },
