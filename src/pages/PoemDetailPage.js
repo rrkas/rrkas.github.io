@@ -10,9 +10,11 @@ function PoemDetailPage({ id }) {
   }
 
   return (
-    <div className="w-100 h-100 p-2 p-lg-3">
-      <GDriveItemViewer gdrive_file_id={poem.gdrive_file_id} name={poem.name} />
-    </div>
+    <GDriveItemViewer
+      gdrive_file_id={poem.gdrive_file_id}
+      name={poem.name}
+      date={poem.date}
+    />
   );
 }
 

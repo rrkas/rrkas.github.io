@@ -2,7 +2,7 @@ import { frontPic, fullName, intro } from "../utils/data";
 
 function IntroPage() {
   return (
-    <div className="p-2 p-lg-3">
+    <>
       <div className="row">
         <div className="col-6 col-lg-2 mb-2">
           <div className="card card-body h-100 rounded">
@@ -123,7 +123,7 @@ function IntroPage() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

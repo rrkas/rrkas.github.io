@@ -38,6 +38,16 @@ const MainNavigation = ({ location }) => {
               </li>
               <li
                 className={
+                  "nav-item " +
+                  (location === urls.technical.index ? "active" : "")
+                }
+              >
+                <Link className="nav-link" to={urls.technical.index}>
+                  <span className="nav-link-title">Technical</span>
+                </Link>
+              </li>
+              <li
+                className={
                   "nav-item " + (location === urls.poems.index ? "active" : "")
                 }
               >

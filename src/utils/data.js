@@ -333,3 +333,170 @@ export const poems = {
     );
   },
 };
+
+export const technical = {
+  experiences: [
+    {
+      start_date: "15-07-2020",
+      end_date: "16-09-2020",
+      type: "Internship",
+      name: "Flutter Mobile App Intern",
+      place: "PriME Technology PVT Ltd.",
+      tech_list: "Flutter,Firebase,Dart",
+    },
+    {
+      start_date: "01-12-2020",
+      end_date: "02-01-2021",
+      type: "Internship",
+      name: "Flutter Mobile App Intern",
+      place: "PriME Technology PVT Ltd.",
+      tech_list: "Flutter,Firebase,Dart",
+    },
+    {
+      start_date: "01-10-2020",
+      end_date: "31-10-2020",
+      type: "Open Source",
+      name: "HactoberFest 2020",
+      place: "DigitalOcean",
+      tech_list: "Flutter",
+    },
+    {
+      start_date: "01-06-2019",
+      end_date: "29-06-2019",
+      type: "Internship",
+      name: "Core Java Student Intern",
+      place: "Central Tool Room and Training Centre (CTTC)",
+      tech_list: "Java",
+    },
+    {
+      start_date: "15-03-2021",
+      end_date: "30-12-2021",
+      type: "Internship",
+      name: "Intern",
+      place: "Fynarfin Tech Private Limited",
+      tech_list: "Python,Angular,Docker,Elasticsearch,Java",
+    },
+  ],
+  certificates: [
+    {
+      date: "28-05-2021",
+      type: "Course",
+      issuer: "Cisco Networking Academy",
+      name: "DevNet Associate",
+      gdrive_file_id: "1p4hTkd_A6uj2-eETRkI-FEw-bwJT_xTI",
+    },
+    {
+      date: "23-05-2021",
+      type: "Course",
+      issuer: "SAP SE",
+      name: "SAP Certified Development Associate - ABAP with SAP NetWeaver 7.50",
+      gdrive_file_id: "14I2e3-p35aufVhZPiYCF8uxar4Iy-Kqq",
+    },
+    {
+      date: "08-04-2020",
+      type: "Course",
+      issuer: "Coursera",
+      name: "Python for Everybody",
+      gdrive_file_id: "1ZzQgM50shU-kqnIz3jAlqYOUJxQ0kZ6i",
+    },
+    {
+      date: "29-06-2019",
+      type: "Internship",
+      issuer: "Central Tool Room & Training Centre (CTTC)",
+      name: "Core Java",
+      gdrive_file_id: "1JbJVyiHy3jfMto7BqRWynfHYZJLVLvYu",
+    },
+    {
+      date: "06-10-2020",
+      type: "Open Source",
+      issuer: "KIDE",
+      name: "HactoberFest 2020",
+      gdrive_file_id: "19ccEi8Y-3F65vccfJxDFzaTt5EV_pdem",
+    },
+    {
+      date: "16-09-2020",
+      type: "Internship",
+      issuer: "PriME Technology PVT Ltd.",
+      name: "Flutter App Internship - Karmik Suraksha",
+      gdrive_file_id: "12CWAsswL8Z9-TCsSnJy1RM8H7ze7jc8a",
+    },
+    {
+      date: "02-01-2021",
+      type: "Internship",
+      issuer: "PriME Technology PVT Ltd.",
+      name: "Flutter App Internship - Utkristh Gunnavatta",
+      gdrive_file_id: "1qzKDrxgjYXx6Cmj3lZyCjWNwvabEWdV9",
+    },
+    {
+      date: "20-10-2019",
+      type: "Workshop",
+      issuer: "LIT & Spectrum",
+      name: "Python Workshop",
+      gdrive_file_id: "1uhPKTIrDi3F-1N_eAQdq5UbKqB3BOJoH",
+    },
+    {
+      date: "31-05-2020",
+      type: "Internship",
+      issuer: "Nimble Tech & Spectrum",
+      name: "Android App Development",
+      gdrive_file_id: "1WASwDy078AvQYAUozwJV1nXBTVJ1ORJj",
+    },
+    {
+      date: "23-04-2021",
+      type: "Course",
+      issuer: "Cisco Networking Academy",
+      name: "Cybersecurity Essentials",
+      gdrive_file_id: "1UTAA-l4Rcgj1RzIrqW-WH5AeHzZnZc8y",
+    },
+    {
+      date: "23-04-2021",
+      type: "Course",
+      issuer: "Cisco Networking Academy",
+      name: "Introduction to Cybersecurity",
+      gdrive_file_id: "1XQxYHHQUgbPtY5mV6Ixc9XQZb72GNAUx",
+    },
+    {
+      date: "30-03-2021",
+      type: "Course",
+      issuer: "Cisco Networking Academy",
+      name: "Introduction to Packet Tracer",
+      gdrive_file_id: "1UpTJ5_0f_cfXWO6Gft06qmqZkJciYX8Z",
+    },
+    {
+      date: "13-03-2021",
+      type: "Course",
+      issuer: "OpenEDG Python Institute (Cisco)",
+      name: "Programming Essentials in Python (PCAP)",
+      gdrive_file_id: "1OOZq73deaJrMVNiNO4eRTPCu7D-UjVMO",
+    },
+
+    {
+      date: "03-05-2021",
+      type: "Course",
+      issuer: "Cisco Networking Academy",
+      name: "CCNAv7: Introduction to Networks",
+      gdrive_file_id: "1cenLYhNJWVyJ5gXWUELNTAVTL31jMp1N",
+    },
+    {
+      date: "31-12-2021",
+      type: "Internship",
+      issuer: "Fynarfin Tech Private Limited",
+      name: "Experience Letter",
+      gdrive_file_id: "1YABiln6-LIe2Cxh8e0m9bsHzLm8SnLoq",
+    },
+    {
+      date: "18-04-2021",
+      type: "Certification",
+      issuer: "Infosys",
+      name: "Infosys Certified Software Programmer",
+      gdrive_file_id: "1TQhxEGBh2rTQrSfCnohrY8P_NAQkiPfr",
+    },
+  ],
+  encode_certificate: (cert) => {
+    const key = (cert.date + "-" + cert.name).replace(/[\W_]+/gi, "-");
+    return key;
+  },
+  get_certificate: (id) => {
+    return technical.certificates.find((e) => technical.encode_certificate(e) === id);
+  },
+};

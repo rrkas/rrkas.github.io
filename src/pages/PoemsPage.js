@@ -5,11 +5,15 @@ import { strToDate } from "../utils/format_utils";
 import { urls } from "../utils/urls";
 
 function PoemsPage() {
-  const sortedCollections = poems.collections.sort((a, b) => strToDate(b.date) - strToDate(a.date));
-  const sortedShortPoems = poems.short_poems.sort((a, b) => strToDate(b.date) - strToDate(a.date));
+  const sortedCollections = poems.collections.sort(
+    (a, b) => strToDate(b.date) - strToDate(a.date)
+  );
+  const sortedShortPoems = poems.short_poems.sort(
+    (a, b) => strToDate(b.date) - strToDate(a.date)
+  );
 
   return (
-    <div className="p-2 p-lg-3">
+    <>
       <h1>Poems</h1>
 
       <h3>Collections ({poems.collections.length})</h3>
@@ -49,7 +53,7 @@ function PoemsPage() {
           </div>
         ))}
       </div>
-    </div>
+    </>
   );
 }
 

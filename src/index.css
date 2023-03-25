@@ -67,12 +67,13 @@ a.btn:active {
 
 .poem-date {
   color: #888888;
+  font-size: 14px;
 }
 
 a.poem-title {
   color: indigo;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .item-url {
@@ -95,4 +96,12 @@ a.item-url:hover {
   width: 30px;
   border-radius: 30px;
   margin-right: 10px;
+}
+
+.tech {
+  color: white;
+  border-radius: 100px;
+  background-color: indigo;
+  text-align: center;
+  padding: 2px 10px 5px 10px;
 }

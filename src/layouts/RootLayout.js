@@ -4,6 +4,8 @@ import IntroPage from "../pages/IntroPage";
 import PoemsPage from "../pages/PoemsPage";
 import PoemDetailPage from "../pages/PoemDetailPage";
 import { urls } from "../utils/urls";
+import TechnicalPage from "../pages/TechnicalPage";
+import CertificateDetailPage from "../pages/CertificateDetailPage";
 
 function RootLayout(props) {
   const [searchParams] = useSearchParams();
@@ -12,6 +14,16 @@ function RootLayout(props) {
 
   var content = <IntroPage />;
   var location = urls.root;
+
+  if (searchParams.has("technical")) {
+    content = <TechnicalPage />;
+    location = urls.technical.index;
+  }
+
+  if (searchParams.has("certificate")) {
+    content = <CertificateDetailPage id={searchParams.get("certificate")} />;
+    location = urls.technical.index;
+  }
 
   if (searchParams.has("poems")) {
     content = <PoemsPage />;
@@ -26,7 +38,9 @@ function RootLayout(props) {
   return (
     <>
       <MainNavigation location={location} />
-      <div className="container-fluid">{content}</div>
+      <div className="container-fluid">
+        <div className="p-2 p-lg-3">{content}</div>
+      </div>
     </>
   );
 }

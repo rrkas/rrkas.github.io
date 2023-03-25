@@ -1,12 +1,13 @@
 import React from "react";
 
-function GDriveItemViewer({ name, gdrive_file_id }) {
+function GDriveItemViewer({ name, date, gdrive_file_id }) {
   const url = `https://drive.google.com/file/d/${gdrive_file_id}/preview?usp=drivesdk`;
   return (
     <div className="w-100 h-100">
-      <h1>{name}</h1>
+      <p className="h3 text-muted mb-0">{date}</p>
+      <h1 className="mt-0">{name}</h1>
       <div className="pt-2 pb-2">
-        <a className="item-url" href={url} target="_blank">
+        <a className="item-url" href={url} rel="noreferrer" target="_blank">
           Click Here for more details
         </a>
       </div>
@@ -16,7 +17,13 @@ function GDriveItemViewer({ name, gdrive_file_id }) {
           textAlign: "center",
         }}
       >
-        <iframe src={url} height={window.innerHeight*0.8} width="100%" allowFullScreen />
+        <iframe
+          title={gdrive_file_id}
+          src={url}
+          height={window.innerHeight * 0.75}
+          width="100%"
+          allowFullScreen
+        />
       </div>
     </div>
   );
