@@ -44,7 +44,7 @@ const MainNavigation = (props) => {
                     : "")
                 }
               >
-                <a className="nav-link" href={urls.poems}>
+                <a className="nav-link" href={urls.poems.index}>
                   <span className="nav-link-title">Poems</span>
                 </a>
               </li>
