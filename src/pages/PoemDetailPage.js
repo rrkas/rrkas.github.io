@@ -1,10 +1,23 @@
 import React from "react";
 import GDriveItemViewer from "../components/GDriveItemViewer";
-import { poems } from "../utils/data";
+import { usePoems } from "../hooks/usePoems";
+import { poemsEncoder } from "../utils/data";
 
 function PoemDetailPage({ id }) {
-  const poem = poems.get_poem(id);
+  const poems = usePoems();
 
+  if (!(poems.collections || poems.short_poems || poems.songs)) {
+    return <p>Loading...</p>;
+  }
+
+  const poem = poemsEncoder.get_poem(
+    [
+      ...(poems.collections || []),
+      ...(poems.short_poems || []),
+      ...(poems.songs || []),
+    ],
+    id
+  );
   if (!poem) {
     return <p>Poem not found</p>;
   }

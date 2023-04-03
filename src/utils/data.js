@@ -32,26 +32,28 @@ export const URLS = {
       "https://docs.google.com/spreadsheets/d/1WcG_RZp8K3dFcudfgRXRYxS0MRt6MllJjO3-WUBacG8/gviz/tq?tqx=out:csv&gid=1281498123",
     SHORT_POEMS:
       "https://docs.google.com/spreadsheets/d/1WcG_RZp8K3dFcudfgRXRYxS0MRt6MllJjO3-WUBacG8/gviz/tq?tqx=out:csv&gid=675347926",
+    SONGS:
+      "https://docs.google.com/spreadsheets/d/1WcG_RZp8K3dFcudfgRXRYxS0MRt6MllJjO3-WUBacG8/gviz/tq?tqx=out:csv&gid=85823737",
   },
 };
 
-export const poems = {
+export const poemsEncoder = {
   encode_poem: (poem) => {
     const key = (poem.date + "-" + poem.name).replace(/[\W_]+/gi, "-");
     return key;
   },
   get_poem: (poem_list, id) => {
-    return poem_list.find((e) => poems.encode_poem(e) === id);
+    return poem_list.find((e) => poemsEncoder.encode_poem(e) === id);
   },
 };
 
-export const technical = {
+export const technicalEncoder = {
   encode_certificate: (cert) => {
     const key = (cert.date + "-" + cert.name).replace(/[\W_]+/gi, "-");
     return key;
   },
   get_certificate: (certificate_list, id) => {
-    return certificate_list.find((e) => technical.encode_certificate(e) === id);
+    return certificate_list.find((e) => technicalEncoder.encode_certificate(e) === id);
   },
 };
 

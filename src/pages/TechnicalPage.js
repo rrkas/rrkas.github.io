@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { readString } from "react-papaparse";
-import { gdrive_download, technical, URLS } from "../utils/data";
+import { gdrive_download,  technicalEncoder, URLS } from "../utils/data";
 import { strToDate } from "../utils/format_utils";
 import { urls } from "../utils/urls";
 
@@ -314,7 +314,7 @@ function TechnicalPage() {
                   <a
                     className="item-url"
                     href={urls.technical.certDetail(
-                      technical.encode_certificate(cert)
+                      technicalEncoder.encode_certificate(cert)
                     )}
                   >
                     <div className="item-box py-3 h-100">

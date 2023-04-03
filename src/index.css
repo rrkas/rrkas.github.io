@@ -70,7 +70,9 @@ a.btn:active {
   font-size: 14px;
 }
 
-a.poem-title {
+a.poem-title,
+a.poem-title:active,
+a.poem-title:visited {
   color: indigo;
   font-weight: 600;
   font-size: 20px;

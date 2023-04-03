@@ -51,7 +51,7 @@ const MainNavigation = ({ location }) => {
                 }
               >
                 <Link className="nav-link" to={urls.poems.index}>
-                  <span className="nav-link-title">Poems</span>
+                  <span className="nav-link-title">Poems & Songs</span>
                 </Link>
               </li>
             </ul>
