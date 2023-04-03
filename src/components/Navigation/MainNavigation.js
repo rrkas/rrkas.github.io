@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
-import logo from "../../logo.png";
-import { myName } from "../../utils/constants";
 import { urls } from "../../utils/urls.js";
+import { fullName, logo } from "../../utils/data";
 
 const MainNavigation = ({ location }) => {
   return (
@@ -21,7 +20,7 @@ const MainNavigation = ({ location }) => {
         <h1 className="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
           <Link to={urls.root}>
             <img src={logo} height="36" alt="" className="mb-1 mr-1" />
-            <span className="ms-2">{myName}</span>
+            <span className="ms-2">{fullName}</span>
           </Link>
         </h1>
         <div className="collapse navbar-collapse" id="navbar-menu">

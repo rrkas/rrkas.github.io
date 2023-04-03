@@ -1,7 +1,8 @@
 import React from "react";
+import { gdrive_preview } from "../utils/data";
 
 function GDriveItemViewer({ name, date, gdrive_file_id }) {
-  const url = `https://drive.google.com/file/d/${gdrive_file_id}/preview?usp=drivesdk`;
+  const url = gdrive_preview(gdrive_file_id);
   return (
     <div className="w-100 h-100">
       <p className="h3 text-muted mb-0">{date}</p>

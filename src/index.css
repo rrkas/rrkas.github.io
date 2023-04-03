@@ -76,7 +76,9 @@ a.poem-title {
   font-size: 20px;
 }
 
-.item-url {
+.item-url,
+.item-url:active,
+.item-url:visited {
   color: #d2691e;
   font-weight: 600;
 }
