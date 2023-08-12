@@ -6,14 +6,17 @@ import { poemsEncoder } from "../utils/data";
 function PoemDetailPage({ id }) {
   const poems = usePoems();
 
-  if (!(poems.collections || poems.short_poems || poems.songs)) {
+  // console.log(poems);
+  // console.log(id);
+
+  if (!(poems.poem_collections || poems.poem_short || poems.songs)) {
     return <p>Loading...</p>;
   }
 
   const poem = poemsEncoder.get_poem(
     [
-      ...(poems.collections || []),
-      ...(poems.short_poems || []),
+      ...(poems.poem_collections || []),
+      ...(poems.poem_short || []),
       ...(poems.songs || []),
     ],
     id

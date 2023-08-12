@@ -43,6 +43,7 @@ export const poemsEncoder = {
     return key;
   },
   get_poem: (poem_list, id) => {
+    // console.log(poem_list);
     return poem_list.find((e) => poemsEncoder.encode_poem(e) === id);
   },
 };
